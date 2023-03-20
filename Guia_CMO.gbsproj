@@ -912,6 +912,14 @@
                                 "__collapse": true
                             },
                             "id": "1b0dce55-ab2e-4612-afe6-90a79499c722"
+                        },
+                        {
+                            "command": "EVENT_INC_VALUE",
+                            "args": {
+                                "variable": "10",
+                                "__collapse": true
+                            },
+                            "id": "4e9cf802-69c4-4ae0-94e2-8cdfe4638f7e"
                         }
                     ],
                     "startScript": [],
@@ -1779,7 +1787,7 @@
                                     "Cumprir todas as \ndemandas."
                                 ],
                                 "avatarId": "",
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "id": "069c1d49-bbb9-4db2-89b5-05e16b4c3878"
                         },
@@ -1790,6 +1798,14 @@
                                 "__collapse": true
                             },
                             "id": "f40624d7-6d47-4812-a4f3-7f2401ad6c2e"
+                        },
+                        {
+                            "command": "EVENT_INC_VALUE",
+                            "args": {
+                                "variable": "10",
+                                "__collapse": true
+                            },
+                            "id": "8e9ef5ad-a534-4eec-b470-c2f3a761fe98"
                         }
                     ],
                     "startScript": [],
@@ -3955,6 +3971,14 @@
                                 "__collapse": false
                             },
                             "id": "3500b4d8-ad71-4a4a-88a8-1e4486e3546b"
+                        },
+                        {
+                            "command": "EVENT_INC_VALUE",
+                            "args": {
+                                "variable": "10",
+                                "__collapse": true
+                            },
+                            "id": "ad909868-3b33-4426-b9fe-2cf06be1d838"
                         }
                     ],
                     "startScript": [],
@@ -4511,6 +4535,14 @@
                                                         "variable": "7",
                                                         "__collapse": true
                                                     }
+                                                },
+                                                {
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "10",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "0e194253-92c0-40c2-9899-778c247cd2ba"
                                                 }
                                             ],
                                             "false": []
@@ -7869,14 +7901,6 @@
                                             "__collapse": true
                                         },
                                         "id": "65847a20-720a-4f87-8857-4486565e977d"
-                                    },
-                                    {
-                                        "command": "EVENT_INC_VALUE",
-                                        "args": {
-                                            "variable": "10",
-                                            "__collapse": true
-                                        },
-                                        "id": "63cb8a60-8a87-49ac-ae31-028816665043"
                                     }
                                 ],
                                 "false": []
@@ -7926,14 +7950,6 @@
                                             "__collapse": true
                                         },
                                         "id": "bb322256-21f6-4cbb-9d0e-04aa52d7e847"
-                                    },
-                                    {
-                                        "command": "EVENT_INC_VALUE",
-                                        "args": {
-                                            "variable": "10",
-                                            "__collapse": true
-                                        },
-                                        "id": "71244630-bdcb-44cf-81b6-7ca329af305f"
                                     }
                                 ],
                                 "false": []
@@ -7983,14 +7999,6 @@
                                             "__collapse": true
                                         },
                                         "id": "a2208bf1-2ea4-43c5-9c86-dbefa8459792"
-                                    },
-                                    {
-                                        "command": "EVENT_INC_VALUE",
-                                        "args": {
-                                            "variable": "10",
-                                            "__collapse": true
-                                        },
-                                        "id": "1b5dc510-abb8-4aea-9830-2668e26c6877"
                                     }
                                 ],
                                 "false": []
@@ -8040,14 +8048,6 @@
                                             "__collapse": true
                                         },
                                         "id": "50479248-8e7b-4637-b5ba-3dda3695d3cb"
-                                    },
-                                    {
-                                        "command": "EVENT_INC_VALUE",
-                                        "args": {
-                                            "variable": "10",
-                                            "__collapse": true
-                                        },
-                                        "id": "a60f5b45-ded9-4277-a779-809507478d82"
                                     }
                                 ],
                                 "false": []
@@ -8082,8 +8082,8 @@
                             "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "10",
-                                "operator": ">",
-                                "comparator": 3,
+                                "operator": ">=",
+                                "comparator": 4,
                                 "__collapseElse": false,
                                 "__collapse": false
                             },
@@ -8245,7 +8245,7 @@
                                     "variable": "5",
                                     "__collapseElse": true,
                                     "__label": "Quest5 Check",
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -18326,8 +18326,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 454,
-        "worldScrollY": 1475,
+        "worldScrollX": 635,
+        "worldScrollY": 0,
         "zoom": 207.5,
         "customColorsEnabled": false,
         "sgbEnabled": false,

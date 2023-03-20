@@ -422,10 +422,12 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Bom dia.\nO vereador está\nprocurando você\nna sala dele."
+                                    "Bom dia, Márcia.",
+                                    "O vereador está\nprocurando você\nna sala dele.",
+                                    "E você tem \ntarefas, veja as \nna secretária."
                                 ],
                                 "avatarId": "",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "ea8acea1-ae5e-4763-90c6-55c6294409bf"
                         }
@@ -438,53 +440,6 @@
                     "id": "69c2aad2-d893-4bf2-bef3-70eabad7f161",
                     "x": 15,
                     "y": 15
-                },
-                {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "031ac1b9-d825-449a-ace5-faffc9fabeb6",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "persistent": false,
-                    "collisionGroup": "",
-                    "symbol": "actor_10",
-                    "script": [
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Bom dia, hoje suas\ndemandas são:",
-                                    "Checar demandas.",
-                                    "Manutenção na \nimprensa.",
-                                    "Pacote Office na\nredação.",
-                                    "Cumprir todas as \ndemandas."
-                                ],
-                                "avatarId": "",
-                                "__collapse": true
-                            },
-                            "id": "069c1d49-bbb9-4db2-89b5-05e16b4c3878"
-                        },
-                        {
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "8",
-                                "__collapse": true
-                            },
-                            "id": "f40624d7-6d47-4812-a4f3-7f2401ad6c2e"
-                        }
-                    ],
-                    "startScript": [],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "d8acfd3f-a663-4e2b-9a42-1ac86ba6274c",
-                    "x": 10,
-                    "y": 4
                 }
             ],
             "triggers": [
@@ -1798,7 +1753,55 @@
             "symbol": "scene_4",
             "x": 398,
             "y": 210,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "fe44e10e-1a78-4d14-bbbe-ed2b154c1be1",
+                    "direction": "up",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_10",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Olá, Márcia. Suas\ndemandas são:",
+                                    "Checar demandas;",
+                                    "Manutenção na \nimprensa;",
+                                    "Pacote Office na\nredação;",
+                                    "Cumprir todas as \ndemandas."
+                                ],
+                                "avatarId": "",
+                                "__collapse": false
+                            },
+                            "id": "069c1d49-bbb9-4db2-89b5-05e16b4c3878"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "8",
+                                "__collapse": true
+                            },
+                            "id": "f40624d7-6d47-4812-a4f3-7f2401ad6c2e"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "d8acfd3f-a663-4e2b-9a42-1ac86ba6274c",
+                    "x": 12,
+                    "y": 16
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -1827,16 +1830,16 @@
                     "name": "",
                     "id": "fa952d10-b5e4-4bb9-a34a-b2777c62932c",
                     "x": 2,
-                    "y": 9,
+                    "y": 10,
                     "symbol": "trigger_6",
                     "width": 1,
-                    "height": 3,
+                    "height": 2,
                     "script": [
                         {
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Me: Secretaria. Aqui é setor geral."
+                                    "Não são essas."
                                 ],
                                 "avatarId": ""
                             },
@@ -3938,8 +3941,8 @@
                             "args": {
                                 "text": [
                                     "Oi, estava \nprocurando você.\nPode me ajudar?",
-                                    "Coloque a senha do wi-fi\npor favor?",
-                                    "Obrigada, Deus \nlhe pague."
+                                    "Coloque a senha do\nWi-Fi por favor?",
+                                    "Obrigado, Deus \nlhe pague."
                                 ],
                                 "avatarId": ""
                             },
@@ -18323,8 +18326,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 168,
-        "worldScrollY": 0,
+        "worldScrollX": 454,
+        "worldScrollY": 1475,
         "zoom": 207.5,
         "customColorsEnabled": false,
         "sgbEnabled": false,
